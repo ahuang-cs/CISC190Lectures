@@ -1,13 +1,33 @@
 package edu.sdccd.cisc190;
 
+import java.util.Scanner;
+
 public class Main {
     /**
      * Main.main() is the entry point for this app
      * @param args input parameters
      */
     public static void main(String[] args) {
-        Student student = new Student("Andrew", "Huang", "ahuang@sdccd.edu");
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("Enter student first name: ");
+//        String firstName = scanner.nextLine();
+//
+//        System.out.println("Enter student last name: ");
+//        String lastName = scanner.nextLine();
+//
+//        System.out.println("Enter student email: ");
+//        String email = scanner.nextLine();
+
+        System.out.println(Student.CAMPUS);
+
+//        Student student = new Student(firstName, lastName, email);
+        Student student = new Student(args[0], args[1], args[2]);
         System.out.println(student.getFirstName());
+        System.out.println("Student.CAMPUS: " + Student.CAMPUS);
+        System.out.println("student.CAMPUS: " + student.CAMPUS);
+        student.CAMPUS = "Mesa";
+        System.out.println("Student.CAMPUS: " + Student.CAMPUS);
+        System.out.println("student.CAMPUS: " + student.CAMPUS);
 
 
 //        int integerDemo = 1;
