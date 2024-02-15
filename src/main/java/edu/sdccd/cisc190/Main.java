@@ -8,6 +8,9 @@ public class Main {
      * @param args input parameters
      */
     public static void main(String[] args) {
+        System.out.println(args);
+        System.out.println("args.length " + args.length);
+
 //        Scanner scanner = new Scanner(System.in);
 //        System.out.println("Enter student first name: ");
 //        String firstName = scanner.nextLine();
