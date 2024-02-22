@@ -10,7 +10,6 @@ public class Main {
      * @param args input parameters
      */
     public static void main(String[] args) {
-
         char a = 'A';
         char c = 'c';
         System.out.println(0 + 'a');
