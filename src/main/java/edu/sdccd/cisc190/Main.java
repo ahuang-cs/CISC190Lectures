@@ -10,6 +10,63 @@ public class Main {
      * @param args input parameters
      */
     public static void main(String[] args) {
+
+        char a = 'A';
+        char c = 'c';
+        System.out.println(0 + 'a');
+        System.out.println(0 + 'A');
+        System.out.println(0 + 'b');
+        System.out.println(c);
+        System.out.println(a + c);
+        System.out.println(a - c);
+        if('A' > 'a') {
+            System.out.println("A comes after a");
+        }
+
+        String strA = "A";
+        String strC = "C";
+        System.out.println(strA + strC);
+
+
+        double z = 5.0;
+        String s = "string";
+        String zFormatted = String.format("z is %6.2f\n", z);
+        System.out.print(zFormatted);
+        System.out.printf("this is a %s\n", s);
+
+        boolean isRaining = false;
+        if(!isRaining) {
+            System.out.println("Go outside!");
+        } else {
+            System.out.println("Wait awhile");
+        }
+        // ternary operator
+        System.out.println(isRaining ? "Wait awhile" : "Go outside!");
+
+        System.exit(0);
+
+        int x = 5;
+        int y = 10;
+        //       true         true
+        //  true     true           true
+        //   4   6    3   4     7   8  4
+        if(x < y && (x + y) >= 15 || (x--) < 10) {
+            System.out.println("true");
+        }
+        x += 3;
+        switch(x) {
+            case 1:
+                System.out.println("one");
+            case 2:
+                System.out.println("two");
+            case 8:
+                System.out.println("eight");
+        }
+
+        System.out.println(x);
+
+        System.exit(0);
+
         Student student = new Student(args[0], args[1], args[2]);
         Teacher teacher = new Teacher("Andrew", "Huang", "ahuang@sdccd.edu", true);
         Administrator admin = new Administrator();
