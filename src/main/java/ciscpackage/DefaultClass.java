@@ -27,13 +27,40 @@ public class DefaultClass {
     }
 
     public static void main(String[] args) {
-        DefaultClass defClass = new DefaultClass();
-        System.out.println(defClass.name);
-        System.out.println(defClass.pubStr);
-        System.out.println(defClass.proStr);
-        System.out.println(defClass.defStr);
+        Dog[] dogs = new Dog[3];
+        dogs[0] = new Corgi("Bill", "Corgi", "Squeaking Sheep");
+        dogs[1] = new Dog("Vin", "Chihuahua", "Slithering Snake");
+        dogs[2] = new Dog("Ted", "German Shephard", "Tennis Ball");
 
-        System.out.println(staticStr);
-        System.out.println(DefaultClass.staticStr);
+        int l = 0;
+        do {
+            System.out.println(l++);
+        } while(l < 100);
+
+        int k = 0;
+        while(true) {
+            System.out.println(k++);
+            if(k == 100) break;
+        }
+
+        int j = 0;
+        while(j < dogs.length) {
+            System.out.println(dogs[j].getName());
+            j++;
+        }
+        System.exit(0);
+        for(Dog dog: dogs) {
+            System.out.println(dog.getName());
+        }
+        int i;
+        for(i = 0; i < dogs.length; i++) {
+            if(dogs[i].getName().equals("Vin")) {
+                break;
+            }
+            System.out.println(dogs[i].getName());
+        }
+
+        System.out.println(i);
+
     }
 }
