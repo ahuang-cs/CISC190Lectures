@@ -7,6 +7,10 @@
     <groupId>edu.sdccd.cisc190</groupId>
     <artifactId>Lectures</artifactId>
     <version>1.0.0</version>
+    <packaging>pom</packaging>
+    <modules>
+        <module>IODemo</module>
+    </modules>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
