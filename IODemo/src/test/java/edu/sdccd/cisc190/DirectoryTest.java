@@ -42,6 +42,25 @@ class DirectoryTest {
 
     @Test
     @Order(3)
+    void copyFile() {
+        File file;
+        try {
+            file = new File(Main.DESTINATION_PATH + "/world.txt");
+            file.copyFromResourcesBuffered("hello.txt");
+            assertTrue(file.exists());
+
+            if(!file.delete()) {
+                printErrorMessageAndExit("The file could not be deleted!");
+            }
+            assertFalse(file.exists());
+        } catch (IOException e) {
+            printErrorMessageAndExit(e.getMessage());
+        }
+
+    }
+
+    @Test
+    @Order(4)
     void delete() {
         dir.delete();
         assertFalse(dir.exists());
