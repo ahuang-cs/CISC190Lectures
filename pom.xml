@@ -10,6 +10,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>IODemo</module>
+        <module>MidtermReview1</module>
     </modules>
 
     <properties>
