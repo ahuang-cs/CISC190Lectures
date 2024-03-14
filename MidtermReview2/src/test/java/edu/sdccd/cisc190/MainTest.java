@@ -18,6 +18,7 @@ class MainTest {
         // test relational operators
         assertFalse(str1.equals(str2));
         assertFalse(str1 == str2);
+        assertFalse(str1.compareTo(str2) == 0);
         assertEquals(-12, str1.compareTo(str2));
         assertEquals(0, str3.compareToIgnoreCase(str1) + str1.compareToIgnoreCase(str3));
     }
@@ -59,6 +60,8 @@ class MainTest {
     void ifMathTest() {
         int x = 35;
         int y = 20, ans = 80;
+
+        // intentional null statement
         if(x < y);
         ans += y;
         assertEquals(100,ans);
@@ -112,5 +115,91 @@ class MainTest {
         }
 
         System.out.println(x);
+    }
+
+    @Test
+    void nestedIfTest() {
+        double discountRate = 0.0;
+        int puchase = 1250;
+        char cust = 'N';
+
+        if(puchase > 1000)
+            if(cust == 'Y')
+                discountRate = .05;
+            else
+                discountRate = .04;
+        else if(puchase > 750)
+            if(cust == 'Y')
+                discountRate = .04;
+            else
+                discountRate = .03;
+        else
+            discountRate = 0;
+    }
+
+    @Test
+    void charCmp() {
+        char chr = 'a';
+
+        if(chr == 'b') {
+
+        }
+    }
+
+    @Test
+    void switchMissingBreakTest() {
+        double discountRate;
+        char custType = 'B';
+        switch(custType) {
+            case 'A':
+                discountRate = .08;
+                break;
+            case 'B':
+                discountRate = .06;
+            case 'C':
+                discountRate = .04;
+            default:
+                discountRate = 0.0;
+        }
+    }
+
+    @Test
+    void notEqualTest() {
+        String str1 = "hello";
+        String str2 = "world";
+
+        assertTrue(!str1.equals(str2));
+        assertTrue(str1 != str2);
+    }
+
+    @Test
+    void strFormatTest2() {
+        // display 12.7801 as $12.78
+        float x = 11231232.7801f;
+
+        System.out.printf("$%.2f", x);
+    }
+
+    @Test
+    void ifWithMathTest() {
+        int ans = 35, x = 50, y = 50;
+
+        if(x >= y) {
+            ans = x + 10;
+            x -= y;
+        } else {
+            ans = y + 10;
+            y += x;
+        }
+
+        assertEquals(60, ans);
+        assertEquals(50, y);
+        assertEquals(0, x);
+    }
+
+    @Test
+    void printfTest() {
+        int d = 9, e = 12;
+        System.out.printf("%d %d\n", d, e);
     }
 }
