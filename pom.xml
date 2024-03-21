@@ -14,6 +14,11 @@
         <module>MidtermReview2</module>
         <module>Chapter4Exercises</module>
         <module>MidtermReview3</module>
+        <module>Lab4.2</module>
+        <module>Lab4.1</module>
+        <module>Lab4.3</module>
+        <module>Quiz4.6.3</module>
+        <module>GoneFishing</module>
     </modules>
 
     <properties>
