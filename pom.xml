@@ -19,6 +19,9 @@
         <module>Lab4.3</module>
         <module>Quiz4.6.3</module>
         <module>GoneFishing</module>
+        <module>MethodDemo</module>
+        <module>UnitConversionApp</module>
+        <module>RPSGame</module>
     </modules>
 
     <properties>
