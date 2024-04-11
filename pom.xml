@@ -22,6 +22,9 @@
         <module>MethodDemo</module>
         <module>UnitConversionApp</module>
         <module>RPSGame</module>
+        <module>Chapter5Review</module>
+        <module>ShapesLab</module>
+        <module>SavingsAccount</module>
     </modules>
 
     <properties>
