@@ -25,6 +25,8 @@
         <module>Chapter5Review</module>
         <module>ShapesLab</module>
         <module>SavingsAccount</module>
+        <module>Quiz6Review</module>
+        <module>ArrayDemo</module>
     </modules>
 
     <properties>
