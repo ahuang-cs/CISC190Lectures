@@ -28,6 +28,7 @@
         <module>Quiz6Review</module>
         <module>ArrayDemo</module>
         <module>ArrayLab</module>
+        <module>MultidimensionalArrayLab</module>
     </modules>
 
     <properties>
