@@ -27,6 +27,7 @@
         <module>SavingsAccount</module>
         <module>Quiz6Review</module>
         <module>ArrayDemo</module>
+        <module>ArrayLab</module>
     </modules>
 
     <properties>
