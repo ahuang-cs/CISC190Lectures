@@ -29,6 +29,8 @@
         <module>ArrayDemo</module>
         <module>ArrayLab</module>
         <module>MultidimensionalArrayLab</module>
+        <module>Quiz7Review</module>
+        <module>Chapter8Lecture</module>
     </modules>
 
     <properties>
