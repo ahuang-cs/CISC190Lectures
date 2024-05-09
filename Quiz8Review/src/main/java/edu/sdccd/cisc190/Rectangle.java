@@ -3,6 +3,12 @@ package edu.sdccd.cisc190;
 import java.util.Objects;
 
 public class Rectangle {
+    private int priv;
+    protected int prot;
+    int def;
+    public int pub;
+
+
     int height;
     int width;
 //    @Override
@@ -10,7 +16,10 @@ public class Rectangle {
 //        return "This is a rectangle instance!";
 //    }
     public Rectangle() {
-
+        System.out.println(priv);
+        System.out.println(prot);
+        System.out.println(def);
+        System.out.println(pub);
     }
 
     @Override
