@@ -31,6 +31,7 @@
         <module>MultidimensionalArrayLab</module>
         <module>Quiz7Review</module>
         <module>Chapter8Lecture</module>
+        <module>Quiz8Review</module>
     </modules>
 
     <properties>
