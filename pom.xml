@@ -33,6 +33,7 @@
         <module>Chapter8Lecture</module>
         <module>Quiz8Review</module>
         <module>Chapter10Lecture</module>
+        <module>Chapter10QuizReview</module>
     </modules>
 
     <properties>
