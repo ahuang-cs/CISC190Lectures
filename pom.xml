@@ -36,6 +36,7 @@
         <module>Chapter10QuizReview</module>
         <module>ExceptionDemo</module>
         <module>ProgrammingProject11.1</module>
+        <module>Chapter11QuizReview</module>
     </modules>
 
     <properties>
